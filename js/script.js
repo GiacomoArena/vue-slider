@@ -5,6 +5,8 @@ createApp({
 
   data(){
     return{
+      isActive: true,
+      empty: false,
       counter:0,
       images: [
       "img/01.webp",

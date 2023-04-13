@@ -19,18 +19,21 @@
       <div class="container">
         <div class="slider">
 
-          <div @click="nextButton" class="arrow up">
+          <div @click="nextButton()" class="arrow up">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
           <div class="img-wrapper">
-            <img :src="images[counter]" alt="">
+            <img :src="images[counter]" >
           </div>
-          <div @click="prevButton" class="arrow down">
+          <div @click="prevButton()" class="arrow down">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
 
           <div v-for="(image, i) in images"  class="thumbs">
-            <img @click="thumbsOnClick(i)" :src="images[i]">
+
+            <img v-if="counter === i " @click="thumbsOnClick(i)" :src="images[i]" :class="{active: isActive}" >
+            
+            <img v-else @click="thumbsOnClick(i)" :src="images[i]" :class="{active: empty}" >
           </div>
         </div>
       </div>
