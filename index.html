@@ -29,8 +29,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </div>
 
-          <div v-for="(image, index) in images"  class="thumbs">
-            <img @click="thumbsOnClick" :src="images[index]">
+          <div v-for="(image, i) in images"  class="thumbs">
+            <img @click="thumbsOnClick(i)" :src="images[i]">
           </div>
         </div>
       </div>

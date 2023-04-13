@@ -35,7 +35,9 @@ createApp({
       }
     },
 
-    thumbsOnClick(index){
+    thumbsOnClick(i){
+      console.log(i);
+      this.counter = i
     }
   }
 
