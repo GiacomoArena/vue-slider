@@ -61,3 +61,22 @@ top: 10px;
   bottom: 10px;
 }
 
+.thumbs{
+  display: flex;
+  float: left;
+  width:calc(100% / 5);
+  height: 100%;
+}
+.thumbs img{
+  width: 100%;
+  height: calc(100% / 5);
+  object-fit: cover;
+  border: 2px solid rgb(110, 7, 110);
+  cursor: pointer;
+  /* opacity: .5; */
+}
+
+.thumbs img.active{
+  border: 2px solid white;
+  opacity: 1;
+}
