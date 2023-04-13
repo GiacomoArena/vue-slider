@@ -19,13 +19,13 @@
       <div class="container">
         <div class="slider">
 
-          <div class="arrow up">
+          <div @click="nextButton" class="arrow up">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
           <div class="img-wrapper">
             <img :src="images[counter]" alt="">
           </div>
-          <div class="arrow down">
+          <div @click="prevButton" class="arrow down">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
 
