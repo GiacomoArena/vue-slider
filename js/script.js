@@ -40,7 +40,17 @@ createApp({
     thumbsOnClick(i){
       console.log(i);
       this.counter = i
+    },
+
+    autoPlay(){
+      setTimeout(() => {
+        this.nextButton()
+      }, 4000);
     }
+  },
+
+  mounted(){
+    this.autoPlay()
   }
 
 }).mount('#app');
