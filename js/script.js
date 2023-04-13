@@ -33,6 +33,9 @@ createApp({
       else{
         this.counter = 4;
       }
+    },
+
+    thumbsOnClick(index){
     }
   }
 
